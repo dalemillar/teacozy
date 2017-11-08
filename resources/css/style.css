@@ -7,14 +7,11 @@ body{
   text-align: center;
 }
 
-div{
-  border: 1px solid red;
-}
-
 .flex-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 header {
@@ -80,6 +77,7 @@ h2,h4{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
+  margin-top: 40px;
   width: 1000px;
 }
 
@@ -91,14 +89,66 @@ h2,h4{
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 40px;
 }
 
 .product{
   width: 300px;
   display: block;
+
 }
 
 .product img{
   height: 200px;
   margin-bottom: 0px
+}
+
+#locations{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 500px;
+  justify-content: center;
+  background-image: url(../images/img-locations-background.jpg);
+  padding-top: 0px;
+}
+
+#locations .title{
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  height: 100px;
+
+}
+
+#locations h2{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+#locations .address_box{
+  display: flex;
+  width: 980px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.address{
+  width: 300px;
+  height: 250px;
+  opacity: 1;
+  background-color: black;
+  text-align: center;
+  display: block;
+}
+
+.bottom{
+  height: 200px;
+  display: block;
+}
+
+.footer{
+  text-align: left;
+  justify-content: left;
 }
